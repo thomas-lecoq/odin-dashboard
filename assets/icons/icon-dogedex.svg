@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" width="220" height="220">
+  <title>Dogedex</title>
+  
+  <circle cx="110" cy="110" r="94" fill="#F3E4CC" stroke="#2E1C12" stroke-width="7"></circle>
+  <circle cx="110" cy="110" r="82" fill="none" stroke="#2E1C12" stroke-width="2.5" stroke-dasharray="3 6"></circle>
+  
+  <path d="M62 76 Q52 110 66 146 Q82 148 92 128 Q88 90 82 76 Z" fill="#A14B2C" stroke="#2E1C12" stroke-width="7" stroke-linejoin="round"></path>
+  <path d="M158 76 Q168 110 154 146 Q138 148 128 128 Q132 90 138 76 Z" fill="#A14B2C" stroke="#2E1C12" stroke-width="7" stroke-linejoin="round"></path>
+  <path d="M70 96 Q66 124 76 140 Q84 140 88 124 Q86 104 80 92 Z" fill="#D4A24C"></path>
+  <path d="M150 96 Q154 124 144 140 Q136 140 132 124 Q134 104 140 92 Z" fill="#D4A24C"></path>
+  
+  <path d="M72 110 Q72 78 110 76 Q148 78 148 110 Q148 150 110 158 Q72 150 72 110 Z" fill="#C8623E" stroke="#2E1C12" stroke-width="7" stroke-linejoin="round"></path>
+  
+  <ellipse cx="110" cy="130" rx="28" ry="20" fill="#FBF3E5" stroke="#2E1C12" stroke-width="7"></ellipse>
+  
+  <ellipse cx="110" cy="122" rx="8" ry="6" fill="#2E1C12"></ellipse>
+  
+  <path d="M110 128 L110 138 Q106 142 102 140 M110 138 Q114 142 118 140" stroke="#2E1C12" stroke-width="4" fill="none" stroke-linecap="round"></path>
+  
+  <circle cx="92" cy="106" r="5" fill="#2E1C12"></circle>
+  <circle cx="128" cy="106" r="5" fill="#2E1C12"></circle>
+</svg>

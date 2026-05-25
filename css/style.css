@@ -1,0 +1,115 @@
+/* ============================================
+   FONTS
+   ============================================ */
+@font-face {
+    font-family: 'PorkyBold';
+    src: url('../assets/fonts/PorkyBold.woff2') format('woff2'),
+        url('../assets/fonts/PorkyBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ============================================
+   VARIABLES
+   ============================================ */
+:root {
+    --icon-width: 36px;
+    --icon-nav-gap: 1rem;
+    --nav-list-gap: 0.75rem;
+    --nav-font-size: 1.5rem;
+    --brand-color-darkbrown: #772e13;
+    --brand-color-cream: #ffe6bf;
+    --brand-color-white:#FBF3E5;
+}
+
+/* ============================================
+   COMMON ELEMENTS
+   ============================================ */
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template: 1fr 4fr / minmax(50px, 300px) 5fr; /* rows/cols */
+}
+
+/* ============================================
+   HEADER ELEMENTS
+   ============================================ */
+header {
+    grid-row: 1;
+    grid-column: 2;
+    background-color: var(--brand-color-white);
+    box-shadow: 0px 30px 30px black;
+}
+
+.header-top-ctnr {
+}
+
+.header-bottom-ctnr {
+
+}
+
+/* ============================================
+   NAV RELATED ELEMENTS
+   ============================================ */
+nav {
+    grid-row: 1 / -1;
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: var(--brand-color-darkbrown);
+    font-size: var(--nav-font-size);
+    color: white;          /* texte ET icônes (via currentColor) en blanc */
+}
+
+nav div {
+    margin-bottom: 100px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--nav-list-gap);
+    list-style: none;
+    padding: 0;
+    padding-left: 30px;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--icon-nav-gap);
+}
+
+.company-identity {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: "PorkyBold";
+}
+
+.icon {
+    width: var(--icon-width);
+    height: auto;
+    fill: currentColor;
+}
+
+#company-logo {
+    width: 150px;
+    height: auto;
+}
+
+/* ============================================
+   MAIN RELATED ELEMENTS
+   ============================================ */
+main {
+    max-inline-size: none;
+    background-color: var(--brand-color-cream);
+    grid-row: 2;
+    grid-column: 2;
+}
