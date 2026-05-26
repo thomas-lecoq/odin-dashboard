@@ -15,9 +15,7 @@
    ============================================ */
 :root {
     --icon-width: 36px;
-    --icon-nav-gap: 1rem;
-    --nav-list-gap: 0.75rem;
-    --nav-font-size: 1.5rem;
+    --icon-gap: 1rem;
     --header-font-size: 1rem;
     --brand-color-darkbrown: #772e13;
     --brand-color-cream: #ffe6bf;
@@ -75,7 +73,7 @@ header {
 .search-bar {
     display: flex;
     align-items: center;
-    gap: var(--icon-nav-gap);
+    gap: var(--icon-gap);
     margin-left: var(--margin-side);
     height: 100%;
 }
@@ -94,7 +92,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1.5rem;
+    gap: 1rem;
     margin-right: var(--margin-side);
     padding: 0;
 }
@@ -109,7 +107,7 @@ nav {
     flex-direction: column;
     gap: 50px;
     background-color: var(--brand-color-darkbrown);
-    font-size: var(--nav-font-size);
+    font-size: 1.5rem;
     color: white;          /* texte ET icônes (via currentColor) en blanc */
 }
 
@@ -120,7 +118,7 @@ nav div {
 ul {
     display: flex;
     flex-direction: column;
-    gap: var(--nav-list-gap);
+    gap: 0.75rem;
     list-style: none;
     padding: 0;
     padding-left: 30px;
@@ -131,7 +129,7 @@ li {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: var(--icon-nav-gap);
+    gap: var(--icon-gap);
 }
 
 .company-identity {
