@@ -34,7 +34,7 @@
 body {
     min-height: 100vh;
     display: grid;
-    grid-template: auto 1fr / minmax(275px, 350px) 1fr; /* rows/cols : header = son contenu, main = le reste */
+    grid-template: auto 1fr / minmax(275px, 300px) 1fr; /* rows/cols : header = son contenu, main = le reste */
 }
 
 h2 {
@@ -194,7 +194,7 @@ li {
     justify-content: center;
     align-items: center;
     margin: 0;
-    font-family: "PorkyBold";
+    font-family: "PorkyBold", var(--font-sans);
 }
 
 .icon {
@@ -263,6 +263,8 @@ main {
 .dog-name{
     grid-area: dog-name;
     margin: auto;
+    font-family: 'PorkyBold', var(--font-sans);
+    font-size: 1.5rem;
 }
 
 .dog-stats{
