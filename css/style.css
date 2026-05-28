@@ -263,7 +263,7 @@ main {
 .dog-name{
     grid-area: dog-name;
     margin: auto;
-    font-family: 'PorkyBold', var(--font-sans);
+    font-family: "PorkyBold", var(--font-sans);
     font-size: 1.5rem;
 }
 
