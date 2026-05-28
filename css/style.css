@@ -23,8 +23,8 @@
     --brand-color-white:#FBF3E5;
     --brand-color-gold: #ffd894;
     --margin-side: 50px;
-    --margin-block: 10px;
-    --margin-card: 15px;
+    --margin-block: 6px;
+    --margin-card: 10px;
     --shadow: 0px 2px 5px rgb(141, 141, 141);
 }
 
@@ -47,13 +47,13 @@ body {
 }
 
 .img-small {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
 }
 
 .img-medium {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
 
 .shadowed {
@@ -230,15 +230,141 @@ main {
 
 .main-dog-list > h2 {
     grid-column: 1 / -1;
-    margin-top: 30px;
-    margin-left: var(--margin-card);
+    margin: var(--margin-card);
 }
 
 .card {
+    --card-radius: 0.5rem;
+    display: grid;
+    grid-template: repeat(3, 1fr) / 3fr 2fr;
+    grid-template-areas: 
+        "dog-img dog-name"
+        "dog-img dog-stats"
+        "dog-img dog-badge-ctnr"
+        ;
     background-color: var(--brand-color-white);
     border-left: 10px solid var(--brand-color-darkbrown);
-    border-radius: 0.5em;
+    border-radius: var(--card-radius);
+    padding: 10px;
     margin: var(--margin-card);
+    overflow: hidden;
+}
+
+.dog-img{
+    grid-area: dog-img;
+    border-radius: var(--card-radius);
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.dog-name{
+    grid-area: dog-name;
+    margin: auto;
+}
+
+.dog-stats{
+    grid-area: dog-stats;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.dog-badge-ctnr {
+    grid-area: dog-badge-ctnr;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.dog-badge{
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    border: 1.5px solid transparent;
+    line-height: 1.6;
+    width: 80px;
+    text-align: center;
+}
+
+.type-fluffy {
+  background-color: #6390F0;
+  border-color: #3A6BE0;
+  color: #fff;
+}
+
+.type-wow {
+  background-color: #a310c0;
+  border-color: #7302a8;
+  color: #fff;
+}
+
+.type-calm {
+  background-color: #d8d8d8;
+  border-color: #747474;
+  color: #000000;
+}
+
+
+.type-gentle {
+  background-color: #10c059;
+  border-color: #007e0a;
+  color: #fff;
+}
+
+.type-fast {
+  background-color: #e0e40e;
+  border-color: #c9a019;
+  color: #000000;
+}
+
+.type-hunt {
+  background-color: #c72f01;
+  border-color: #7e2400;
+  color: #fff;
+}
+
+.type-sausage {
+  background-color: #e40e0e;
+  border-color: #ff7e28;
+  color: #ffffff;
+}
+
+.type-sleep {
+  background-color: #0150c7;
+  border-color: #00287e;
+  color: #fff;
+}
+
+.type-liar {
+  background-color: #000000;
+  border-color: #b4b3b3;
+  color: #ffffff;
+}
+
+.type-notadog {
+  background-color: #ec2fbd;
+  border-color: #7e0063;
+  color: #fff;
+}
+
+.type-fierce {
+  background-color: #e73d3d;
+  border-color: #000000;
+  color: #ffffff;
+}
+
+.type-hungry {
+  background-color: #dab758;
+  border-color: #575757;
+  color: #fff;
 }
 
 .main-announcements {
